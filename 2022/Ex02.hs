@@ -2,7 +2,7 @@ module Ex02 where
 import Data.List
 
 main :: IO()
-main = do content <- readFile "ex02_input.txt"
+main = do content <- readFile "ex02.txt"
           let rawList = lines content
           let result = foldr fshape 0 rawList
           print result

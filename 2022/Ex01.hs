@@ -2,7 +2,7 @@ module Ex01 where
 import Data.List
 
 main :: IO()
-main = do content <- readFile "ex01_input.txt"
+main = do content <- readFile "ex01.txt"
           let rawList = lines content
           let (sum, ls) = foldr f (0, []) rawList
           print $ foldr (+) 0 . take 3 . reverse . sort $ sum:ls
